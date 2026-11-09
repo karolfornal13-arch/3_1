@@ -1,23 +1,27 @@
 
 public class Main {
   public static void main(String[] args) {
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 1; j++) {
-            System.out.print(" ".repeat(((10-i))));
-            System.out.print("*".repeat(((i*2)+1)));
-            System.out.print(" ".repeat(((10-i))));
+    for (int i = 0; i <= 11; i++) {
+        if( i <= 0){
+            System.out.print("*".repeat(((1))));
+            System.out.println();
+            System.out.print("*".repeat(((1))));
+            System.out.print("-".repeat(((i))));
+            System.out.print("*".repeat(((1))));
+            System.out.println();
         }
-
-        System.out.println();
+        else{
+            
+            if( i < 10){
+                System.out.print("*".repeat(((1))));
+                System.out.print("-".repeat(((i))));
+                System.out.print("*".repeat(((1))));
+                 System.out.println();
+            }
+            else{
+                 System.out.print("*".repeat(((i/2)+1)));
+            }
     }
-      for (int k = 9; k >= 0; k--) {
-        for (int f = 0; f < 1; f++) {
-            System.out.print(" ".repeat(((10-k))));
-            System.out.print("*".repeat(((k*2)+1)));
-            System.out.print(" ".repeat(((10-k))));
-        }
-
-        System.out.println();
     }
   }
 }
